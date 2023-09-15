@@ -1,5 +1,9 @@
 # bacterial_metagenomes_pangraphs
-A workflow for complete analysis of bacterial metagenomes and pagenome graphs and direct viewing in panchae. It will also analyze metagenomes from both illumina and long reads. If you want in nextflow then leave a comment and i will code in nextflow, currently it runs on slurm and pbs plus docker instances. if you are running this on the slurm or the pbs then also you can run it directly. Adding the support for the singularity containers. 
+A workflow for complete analysis of bacterial metagenomes and pagenome graphs and direct viewing in panchae. It will also analyze metagenomes from both illumina and long reads. If you want in nextflow then leave a comment and i will code in nextflow, currently it runs on slurm and pbs plus docker instances. if you are running this on the slurm or the pbs then also you can run it directly. Adding the support for the singularity containers. soon will push a docker image. 
+
+```
+docker pull ubuntu
+```
 
 Gaurav Sablok \
 ORCID: https://orcid.org/0000-0002-4157-9405 \
