@@ -4,7 +4,7 @@ A workflow for complete analysis of bacterial metagenomes and pagenome graphs an
 # This workflow is still in development and till now only phase 1 completed. 
 
 ```
-docker pull ubuntu
+docker pull ubuntu-bacterial-pangraphs
 ```
 
 Gaurav Sablok \
