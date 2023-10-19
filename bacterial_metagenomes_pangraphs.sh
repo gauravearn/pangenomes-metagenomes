@@ -324,16 +324,16 @@ then
                 then
                     echo "file not present"
                 fi
-        samtools view -bs "${samfile}" -o "${samfile‰}".bam
-        samtools sort "${samfile‰}".bam "${samfile‰}".sorted.bam
-        bamtools index "${samfile‰}".sorted.bam
-        samtools index faidx "${fastagenome}"
-        samtools mpileup -g -f "${fastagenome}" > "${fastagenome%}".bcf
-        bcftools view -bvcg "${fastagenome%}".bcf > "${fastagenome%}".variant.bcf
-        bcftools view "${fastagenome%}".variant.bcf | vcfutils.pl varFilter \
-                        -d "${filter}" -d "${readdepth}" > "${fastagenome%}".selected.vcf
-        gatk AnnotateVcfWithBamDepth --input "${samfile‰}".sorted.bam \
+        echo "samtools view -bs "${samfile}" -o "${samfile‰}".bam"
+        echo "samtools sort "${samfile‰}".bam "${samfile‰}".sorted.bam"
+        echo "bamtools index "${samfile‰}".sorted.bam"
+        echo "samtools index faidx "${fastagenome}""
+        echo "samtools mpileup -g -f "${fastagenome}" > "${fastagenome%}".bcf"
+        echo "bcftools view -bvcg "${fastagenome%}".bcf > "${fastagenome%}".variant.bcf"
+        echo "bcftools view "${fastagenome%}".variant.bcf | vcfutils.pl varFilter \
+                        -d "${filter}" -d "${readdepth}" > "${fastagenome%}".selected.vcf"
+        echo "gatk AnnotateVcfWithBamDepth --input "${samfile‰}".sorted.bam \
                                     --reference "${fastagenome}" \
                                     --output "${fastagenome}".annotated.vcf \
-                                                    --variant "${fastagenome%}".selected.vcf
+                                                    --variant "${fastagenome%}".selected.vcf"
 fi                                                                                                       
