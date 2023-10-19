@@ -4,13 +4,13 @@ A workflow for complete analysis of bacterial metagenomes and pagenome graphs an
 2023-10-19: updated with complete workflow and added support for snpcalling and others. Added support for the single command and it will connect with the slurm and pbs and will connect to the working directory and will end to end process the workflow. An in-addition array is added so that all the files are added.
 
 In the follow updates, adding the support for: 
-multiple pangenomes
-multi mappers
-graph creation
-pangenome construction
-long read assembly
-evolutionary analysis
-genome comparison
+multiple pangenomes \
+multi mappers \
+graph creation \
+pangenome construction \
+long read assembly \
+evolutionary analysis \
+genome comparison 
 
 python and R code will be intergated, plus ruby bindings and also a ruby on rails application for submission to the server plus docker release.   
 
