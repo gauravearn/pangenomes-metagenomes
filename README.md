@@ -1,7 +1,7 @@
 # bacterial_metagenomes_pangraphs
 A workflow for complete analysis of bacterial metagenomes and pagenome graphs and direct viewing in panchae. It will also analyze metagenomes from both illumina and long reads. 
 
-update 2024-2-20: In the follow updates, adding the support for:\ 
+update 2024-2-20: In the follow updates, adding the support for: 
 multiple pangenomes \
 multi mappers \
 graph creation \
